@@ -561,10 +561,10 @@ void CMT2310A_Freq_Scanning(void)
 {
     if(TIMER18ms == 0)
     {
-        if(Flag_FREQ_Scan)  return;
-        CMT2310A_Change_Channel();
+        //if(Flag_FREQ_Scan)  return;
+        //CMT2310A_Change_Channel();
         CG2214M6_USE_R;
-        bRadioGoRx();
+        //bRadioGoRx();
 
         if(Radio_Date_Type==1)
             TIMER18ms = 25;

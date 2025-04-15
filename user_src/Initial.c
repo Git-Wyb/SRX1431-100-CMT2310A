@@ -432,7 +432,8 @@ void CMT2310A_Test_Mode(void)
                     vRadioClearInterrupt();
 
                     CMT2310A_SetDataMode(0); //0=direct mode
-                    CMT2310A_FreqHopping_Select(429175000);
+                    //CMT2310A_FreqHopping_Select(429175000);
+                    CMT2310A_Freq_Select(429177000);
                     //CMT2310A_DataRate_Select(RATE_4_8K);
                     delay_nms(10);
                     bRadioGoTx();
@@ -460,7 +461,8 @@ void CMT2310A_Test_Mode(void)
                     CMT2310A_SetPreamble(0x55);
                     CMT2310A_SetSyncValue(0x55,0x55,0x55);
                     CMT2310A_SetDataMode(2); //2=packet mode
-                    CMT2310A_FreqHopping_Select(429175000);
+                    //CMT2310A_FreqHopping_Select(429175000);
+                    CMT2310A_Freq_Select(429175000);
                     delay_nms(10);
                     //CMT2310A_DataRate_Select(RATE_4_8K);
                     for(Boot_i=0; Boot_i<UHF_LEN; Boot_i++)
@@ -501,7 +503,8 @@ void CMT2310A_Test_Mode(void)
                 vRadioClearTxFifo();
                 vRadioClearInterrupt();
                 CMT2310A_SetDataMode(0); //0=direct mode
-                CMT2310A_FreqHopping_Select(426075000);
+                //CMT2310A_FreqHopping_Select(426075000);
+                CMT2310A_Freq_Select(426075000);
                 //CMT2310A_DataRate_Select(RATE_4_8K);
                 delay_nms(10);
                 bRadioGoRx();

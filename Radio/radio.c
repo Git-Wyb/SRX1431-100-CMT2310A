@@ -786,6 +786,28 @@ void CMT2310A_Freq_Select(u32 freq)
             g_cmt2310a_page1[52] = 0xD5;
             break;
 
+        case 429177000:
+            g_cmt2310a_page1[16] = 0x6B;
+            g_cmt2310a_page1[17] = 0x3F;
+            g_cmt2310a_page1[18] = 0xB5;
+            g_cmt2310a_page1[19] = 0x04;
+            g_cmt2310a_page1[49] = 0x6B;
+            g_cmt2310a_page1[50] = 0x3F;
+            g_cmt2310a_page1[51] = 0x35;
+            g_cmt2310a_page1[52] = 0xD5;
+            break;
+
+        case 429178000:
+            g_cmt2310a_page1[16] = 0x6B;
+            g_cmt2310a_page1[17] = 0x45;
+            g_cmt2310a_page1[18] = 0xB6;
+            g_cmt2310a_page1[19] = 0x04;
+            g_cmt2310a_page1[49] = 0x6B;
+            g_cmt2310a_page1[50] = 0x45;
+            g_cmt2310a_page1[51] = 0x36;
+            g_cmt2310a_page1[52] = 0xD5;
+            break;
+
         case 429200000:
             g_cmt2310a_page1[16] = 0x6B;
             g_cmt2310a_page1[17] = 0xCC;

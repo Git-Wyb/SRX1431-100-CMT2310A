@@ -108,10 +108,10 @@ void main(void)
         Time_APP_blank_TX = 100;
     }
 
-    APP_TX_PACKET();
+    //APP_TX_PACKET();
     if(FLAG_APP_RX == 1)
     {
-        CMT2310A_Freq_Scanning();
+        //CMT2310A_Freq_Scanning();
     }
     ID_Decode_IDCheck();
     if(time_Login_exit_256==0)ID_Decode_OUT();

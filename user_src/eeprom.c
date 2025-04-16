@@ -407,6 +407,7 @@ void ID_learn(void)
                  else Receiver_LED_OUT=!Receiver_LED_OUT;
              }
              if((FLAG_ID_Login_OK==1)&&(FLAG_ID_Login_OK_bank==0)){
+                 if ((ID_Receiver_Login == 0xFFFFFE)&&(FLAG_ID_Erase_Login==1))FLAG_ID_Login_OK_bank=1;
                  //FLAG_ID_Login_OK_bank=1;             //追加多次ID登录
                  FLAG_ID_Login_OK=0;                   //追加多次ID登录
                  if(FLAG_IDCheck_OK==1)FLAG_IDCheck_OK=0;

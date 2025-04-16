@@ -405,7 +405,7 @@ void CMT2300A_PramePass(void)
         TIMER18ms = 550;
         Flag_FREQ_Scan = 1;
         FG_Receiver_LED_RX = 1;
-        TIMER300ms = 600;
+        TIMER300ms = 500;
         CG2214M6_USE_R;
         //Not needed here  bRadioGoStandby()
         if(PROFILE_CH_FREQ_32bit_200002EC == 426075000)

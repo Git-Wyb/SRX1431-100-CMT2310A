@@ -89,10 +89,10 @@ void main(void)
     {
         Flag_RxDone = 0;
         Flag_FREQ_Scan = 0;
-        rssi = CMT2310A_Get_RSSI();
-        RAM_RSSI_SUM += rssi;
-        RSSI_Read_Counter++;
-        RAM_RSSI_AVG = RAM_RSSI_SUM / RSSI_Read_Counter;
+        //rssi = CMT2310A_Get_RSSI();
+        //RAM_RSSI_SUM += rssi;
+        //RSSI_Read_Counter++;
+        //RAM_RSSI_AVG = RAM_RSSI_SUM / RSSI_Read_Counter;
         if(PROFILE_CH_FREQ_32bit_200002EC == 426075000)
         {
             if(Flag_TX_ID_load == 0) CMT2300A_ReadData(SPI_RECEIVE_BUFF,12);
